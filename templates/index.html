@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>The TrafficApp {% block title %}{% endblock %}</title>
+    {% load static %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="{% static 'trafficapp/css/bootstrap.min.css' %}" media="screen">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'trafficapp/css/style.css' %}" media="screen">
+    <link href="{% static 'trafficapp/css/default.css' %}" rel="stylesheet" type="text/css" media="all" />
+    <link href="{% static 'trafficapp/css/nivo-slider.css' %}" rel="stylesheet" type="text/css" media="all" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+    <script src="{% static 'trafficapp/js/jquery-1.9.0.min.js' %}"></script>
+    <script src="{% static 'trafficapp/js/jquery.nivo.slider.js' %}"></script>
+
+    <script type="text/javascript">
+   $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+    </script>
+    {% block stylesheet %}{% endblock %}
+  </head>
+
+<body>
+<div class="wrap">
+  <div class="wrapper-box">
+	<div class="header">
+		<div class="header-top">
+			<div class="logo">
+				<a href="/"><img src="{% static "img/logoz.png" %}" alt=""/></a>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="header-bottom">
+			<div id="cssmenu">
+				<ul>
+				   <li class="active"><a href="/"><span>Home</span></a></li>
+				   <li ><a href="/lt.html"><span>Logistic</span></a></li>
+				   <li ><a href="/knn.html"><span>KNN</span></a></li>
+				   <li ><a href="/svm.html"><span>SVM</span></a></li>
+				   <li ><a href="/dt.html"><span>Decision Tree</span></a></li>
+
+				</ul>
+			</div>
+				<ul class="follow_icon">
+					<li><a href="https://www.facebook.com/" style="opacity: 1;"><img src="{% static "img/facebook.png"  %}" alt=""></a></li>
+					<li><a href="https://twitter.com/login" style="opacity: 1;"><img src="{% static "img/twitter.png"  %}" alt=""></a></li>
+                </ul>
+				<div class="clear"></div>
+		</div>
+	</div>
+<div class="banner">
+ <div id="wrapper">
+ 		<div class="slider-wrapper theme-default">
+            <div id="slider" class="nivoSlider">
+                <img src="{% static "img/c1.jpg"  %}"  alt="" />
+                <img src="{% static "img/car2.jpg"  %}"  alt="" />
+                <img src="{% static "img/c11.jpg" %}"  alt="" />
+                <img src="{% static "img/c4.jpg"  %}"  alt="" />
+            </div>
+        </div>
+ </div>
+</div>
+	<div class="main">
+			<div class="content-bottom">
+				<div class="col_1_of_bottom span_1_of_bottom">
+					<img src="{% static "img/c7.jpg"  %}" alt=""/>
+				     <div class="main_link">
+						<h5>Rules</h5>
+						<p>Choose from any of our extensive range </p>
+					</div>
+					<a href="#" class="btn-link1">read more</a>
+                </div>
+				<div class="col_1_of_bottom span_1_of_bottom">
+					<img src="{% static "img/c8.jpg"  %}" alt=""/>
+				     <div class="main_link">
+						<h5>Help</h5>
+						<p>Choose from any of our extensive range </p>
+					</div>
+					<a href="#" class="btn-link1">read more</a>
+                </div>
+				<div class="col_1_of_bottom span_1_of_last">
+					<img src="{% static "img/c3.jpg"  %}" alt=""/>
+				     <div class="main_link">
+						<h5>Accisdent</h5>
+						<p>Choose from any of our extensive range </p>
+					</div>
+					<a href="#" class="btn-link2">read more</a>
+				    </div>
+				    <div class="clear"></div>
+			    </div>
+	</div>
+      <div>
+          <p>
+                  The costs of fatalities and injuries due to trafficaccidents have a great impact on the society. In recentyears, researchers have paid increasing attention to
+            determining factors that significantly affect severity ofdriver injuries caused by traffic accidents [29][30]. Thereare several approaches that researchers have employed tostudy this problem. These include neural network,
+            nesting logic formulation, log-linear model, fuzzy ARTmaps and so on.
+            Applying data mining techniques to modeltraffic accident data records can help to understand the
+            characteristics of drivers’ behaviour, roadway conditionand weather condition that were causally connected with
+            different injury severity. This can help decision makersto formulate better traffic safety control policies. Roh et
+            al. [22] illustrated how statistical methods based ondirected graphs, constructed over data for the recent
+            period, may be useful in modelling traffic fatalities bycomparing models specified using directed graphs to a
+            model, based on out-of-sample forecasts, originallydeveloped by Peltzman [23]. The directed graphs model
+            outperformed Peltzman’s model in root mean squared forecast error.
+          </p>
+      </div>
+	<div class="footer">
+
+		<div class="copy">
+			<p> © 2019 TrafficAccident.All rights reserved | Design by : Python Team</p>
+		</div>
+	</div>
+  </div>
+</div>
+</body>
+</html>

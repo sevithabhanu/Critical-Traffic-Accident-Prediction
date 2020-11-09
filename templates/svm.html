@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+{% load static %}
+<head>
+    <meta charset="utf-8">
+    <title>SVM {% block title %}{% endblock %}</title>
+    {% load static %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="{% static 'trafficapp/css/bootstrap.min.css' %}" media="screen">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'trafficapp/css/style.css' %}" media="screen">
+    <link href="{% static 'trafficapp/css/default.css' %}" rel="stylesheet" type="text/css" media="all" />
+    <link href="{% static 'trafficapp/css/nivo-slider.css' %}" rel="stylesheet" type="text/css" media="all" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+    <script src="{% static 'trafficapp/js/jquery-1.9.0.min.js' %}"></script>
+    <script src="{% static 'trafficapp/js/jquery.nivo.slider.js' %}"></script>
+    <script rel="stylesheet" src="{% static 'trafficapp/css/swipebox.css' %}"></script>
+    <script src="{% static 'trafficapp/js/jquery.swipebox.min.js' %}"></script>
+
+	<script src="js/jquery.swipebox.min.js"></script>
+	    <script type="text/javascript">
+			jQuery(function($) {
+				$(".swipebox").swipebox();
+			});
+</script>
+</head>
+<body>
+<div class="wrap">
+  <div class="wrapper-box">
+	<div class="header">
+		<div class="header-top">
+			<div class="logo">
+				<a href="/"><img src="{% static "img/logoz.png" %}" alt=""/></a>
+			</div>
+
+			<div class="clear"></div>
+		</div>
+		<div class="header-bottom">
+			<div id="cssmenu">
+				<ul>
+				   <li><a href="/"><span>Home</span></a></li>
+				   <li ><a href="/lt.html"><span>Logistic</span></a></li>
+				   <li ><a href="/knn.html"><span>KNN</span></a></li>
+				   <li class="active"><a href="/svm.html"><span>SVM</span></a></li>
+				   <li ><a href="/dt.html"><span>Decision Tree</span></a></li>
+				</ul>
+			</div>
+				<ul class="follow_icon">
+					<li><a href="https://www.facebook.com/" style="opacity: 1;"><img src="{% static "img/facebook.png"  %}" alt=""></a></li>
+					<li><a href="https://twitter.com/login" style="opacity: 1;"><img src="{% static "img/twitter.png"  %}" alt=""></a></li>
+                </ul>
+				<div class="clear"></div>
+		</div>
+	</div>
+	<div class="main">
+		<div class="services">
+		            <div class="gallery-grids">
+                        <div class="col_1_of_bottom span_1_of_bottom">
+					        <img src="{% static "img/c9.jpg"  %}" alt=""/>
+				             <div class="main_link"></div>
+					        <a href="#" class="btn-link1">read more</a>
+                        </div>
+						<div class="gallery-grid grid2">
+							<a href="images/t-pic5.jpg" class="swipebox"><img src="images/pic5.jpg" alt=""></a>
+							<h4>Support vector machine </h4>
+                            <p> Support vector machine is another simple algorithm that every machine learning expert should have in his/her arsenal. Support vector machine is highly preferred by many as it produces significant accuracy with less computation power. Support Vector Machine,
+                                abbreviated as SVM can be used for both regression and classification <tasks></tasks>.</p>
+							<p><a href="#" class="btn btn-primary">Read more</a></p>
+						</div>
+						<div class="gallery-grid">
+							<a href="images/t-pic6.jpg" class="swipebox"><img src="images/pic6.jpg" alt=""></a>
+							<h4>Support vector machine Results</h4>
+                            <p><h1>Accuracy</h1>
+                            <h2>{{ a }}</h2>
+                            </p>
+                            <p><h1>Confusion Matrix</h1>
+                            <h2>{{ b }}</h2>
+                            </p>								<p><a href="#" class="btn btn-primary">Read more</a></p>
+						</div>
+						<div class="clear"> </div>
+					</div>
+
+
+				</div>
+
+
+				</div>
+	</div>
+	<div class="footer">
+
+		<div class="copy">
+			<p> © 2019 TrafficAccident.All rights reserved | Design by : Python Team</p>
+		</div>
+	</div>
+  </div>
+</div>
+</body>
+</html>
